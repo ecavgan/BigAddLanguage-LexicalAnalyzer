@@ -140,7 +140,7 @@ sub <int_value> from <variable>.
 out <out_list>.
 
     out “The result is:”,sum.
-__
+<br/><br/>
 An integer value is either a variable or a constant.
 
 <int_value>→<variable>|<int_const>
