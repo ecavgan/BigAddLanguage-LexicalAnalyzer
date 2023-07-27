@@ -58,8 +58,10 @@ The content of myscript.lx has to be something like:
  
 If the lexical analyzer encounters an error, it should issue an error message on the screen. There are
 two error categories that such a lexical analyzer has to detect.
+
 1- A big lexeme is just left open (a comment or a string constant that starts but does not terminate
 before the end of file)
+
 2- An unrecognized character is detected in code
 
 # The BigAdd Language
