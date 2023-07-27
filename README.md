@@ -1,6 +1,5 @@
 ﻿# The BigAdd Language
 
-## Intro
 BigAdd language is a small programming language that has been designed in order to add and subtract
 big integers programmatically and display the result on the screen. BigAdd is an interpreted language.
 The BigAdd interpreter works from the command line with the command BA, and takes the script
@@ -8,9 +7,6 @@ file’s name as the only attribute. The script file is assumed to have the exte
 
 example: The command c:\> ba myscript
 must load and execute the script file called myscript.ba
-
-
-## Basics
 
 ### Lines of Code
 Point (‘.’) is the end of line character. Lines can contain keywords, brackets, variables
