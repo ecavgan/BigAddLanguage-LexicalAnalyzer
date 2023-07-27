@@ -2,13 +2,13 @@
 The lexical analyzer for the BigAdd language works from the command line with the command LA,
 and takes the script file’s name as the only attribute. The script file is assumed to have the extension
 '.ba'.
-
+<br/><br/>
 example: The command c:\> la myscript
-
+<br/><br/>
 must load the script file called myscript.ba and perform lexical analysis on it. The results of the lexical
 analysis should be written into a file with the same name and “.lx” extension. This file should contain a suitable
 representation of a token at each line.
-
+<br/><br/>
 Imagine myscript.ba contains the following code:
 
 	int size.
@@ -79,12 +79,12 @@ Point (‘.’) is the end of line character. Lines can contain keywords, bracke
 and constants. Any number of spaces or comments can be used between these elements. A program
 line can be divided between multiple text lines. 
 
-A line of code is one of the following:
-• A variable declaration.
-• An assignment statement.
-• An addition statement.
-• A subtraction statement.
-• An output statement.
+A line of code is one of the following:\
+• A variable declaration.\
+• An assignment statement.\
+• An addition statement.\
+• A subtraction statement.\
+• An output statement.\
 • A loop statement.
 
 ### Comments
@@ -95,7 +95,8 @@ Comments are written between curly braces { }
 
 ### Data Types
 The only data type for variables is the integer. Integer is a signed whole number that is
-represented as a decimal data type. An integer can be as big as 100 decimal digits.
+represented as a decimal data type. An integer can be as big as 100 decimal digits.\
+<br/><br/>
 Strings exist only as constants and are used in the out statements only.
 
       123113, -5, 0, -314159 are valid integer representations.
