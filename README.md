@@ -126,8 +126,7 @@ move <int_value> to <variable>.
     move myVar to yourVar. {assigns myVar to yourVar}
 
 ### Addition Statement
-add <int_value> to <variable>.
-
+add <int_value> to <variable>.\
 Increments the variable by int_value.
 
     add 2 to sum . {The value of sum increases by 2}
@@ -141,15 +140,11 @@ sub <int_value> from <variable>.
 out <out_list>.
 
     out “The result is:”,sum.
-<br/><br/>
-An integer value is either a variable or a constant.
-
-<int_value>→<variable>|<int_const>
-/n
-
-An output list is a list of strings and integer values separated by commas.
-
-<out_list>→<out_list>,<list_element>|<list_element>
+    
+An integer value is either a variable or a constant.\
+<int_value>→<variable>|<int_const>\
+An output list is a list of strings and integer values separated by commas.\
+<out_list>→<out_list>,<list_element>|<list_element>\
 <list_element>→<int_value>|<string>| newline
 
 ### Loop Statement
