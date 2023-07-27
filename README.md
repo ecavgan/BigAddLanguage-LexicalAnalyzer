@@ -140,10 +140,11 @@ sub <int_value> from <variable>.
 out <out_list>.
 
     out “The result is:”,sum.
-
+__
 An integer value is either a variable or a constant.
 
 <int_value>→<variable>|<int_const>
+/n
 
 An output list is a list of strings and integer values separated by commas.
 
