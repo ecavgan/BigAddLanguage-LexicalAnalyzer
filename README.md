@@ -96,7 +96,6 @@ Comments are written between curly braces { }
 ### Data Types
 The only data type for variables is the integer. Integer is a signed whole number that is
 represented as a decimal data type. An integer can be as big as 100 decimal digits.\
-<br/><br/>
 Strings exist only as constants and are used in the out statements only.
 
       123113, -5, 0, -314159 are valid integer representations.
@@ -143,6 +142,7 @@ out <out_list>.
     
 An integer value is either a variable or a constant.\
 <int_value>→<variable>|<int_const>\
+<br/><br/>
 An output list is a list of strings and integer values separated by commas.\
 <out_list>→<out_list>,<list_element>|<list_element>\
 <list_element>→<int_value>|<string>| newline
