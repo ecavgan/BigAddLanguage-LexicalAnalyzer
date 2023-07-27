@@ -1,7 +1,8 @@
 ﻿# How Lexical Analyzer Works
 The lexical analyzer for the BigAdd language works from the command line with the command LA,
 and takes the script file’s name as the only attribute. The script file is assumed to have the extension
-'.ba' .
+'.ba'.
+
 example: The command c:\> la myscript
 
 must load the script file called myscript.ba and perform lexical analysis on it. The results of the lexical
