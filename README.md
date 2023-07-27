@@ -1,4 +1,67 @@
-﻿# The BigAdd Language
+﻿# How Lexical Analyzer Works
+The lexical analyzer for the BigAdd language works from the command line with the command LA,
+and takes the script file’s name as the only attribute. The script file is assumed to have the extension
+'.ba' .
+example: The command c:\> la myscript
+
+must load the script file called myscript.ba and perform lexical analysis on it. The results of the lexical
+analysis should be written into a file with the same name and “.lx” extension. This file should contain a suitable
+representation of a token at each line.
+
+Imagine myscript.ba contains the following code:
+
+	int size.
+	int sum.
+	move 5 to size.
+	loop size times {ignore me, I am a comment}
+	[ out size, newline.
+	add size to sum.
+	]
+	out newline, “Sum:”, sum.
+
+The content of myscript.lx has to be something like:
+
+	Keyword int
+	Identifier size
+	EndOfLine
+	Keyword int
+	Identifier sum
+	EndOfLine
+	Keyword move
+	IntConstant 5
+	Keyword to
+	Identifier size
+	EndOfLine
+	Keyword loop
+	Identifier size
+	Keyword times
+	OpenBlock
+	Keyword out
+	Identifier size
+	Seperator
+	Keyword newline
+	EndOfLine
+	Keyword add
+	Identifier size
+	Keyword to
+	Identifier sum
+	EndOfLine
+	CloseBlock
+	Keyword out
+	Keyword newline
+	Seperator
+	StringConstant “Sum:”
+	Seperator
+	Identifier sum
+	EndOfLine
+ 
+If the lexical analyzer encounters an error, it should issue an error message on the screen. There are
+two error categories that such a lexical analyzer has to detect.
+1- A big lexeme is just left open (a comment or a string constant that starts but does not terminate
+before the end of file)
+2- An unrecognized character is detected in code
+
+# The BigAdd Language
 
 BigAdd language is a small programming language that has been designed in order to add and subtract
 big integers programmatically and display the result on the screen. BigAdd is an interpreted language.
