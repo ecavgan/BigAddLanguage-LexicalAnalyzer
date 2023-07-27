@@ -90,21 +90,21 @@ A line of code is one of the following:\
 ### Comments
 Comments are written between curly braces { }
 
-     {this is a comment} {and 
-     this is a comment too}
+	{this is a comment} {and 
+	this is a comment too}
 
 ### Data Types
 The only data type for variables is the integer. Integer is a signed whole number that is
 represented as a decimal data type. An integer can be as big as 100 decimal digits.\
 Strings exist only as constants and are used in the out statements only.
 
-      123113, -5, 0, -314159 are valid integer representations.
-      3.14159 is not a valid integer (it is a real number)
-      3.0 is not a valid integer (decimal point should not be displayed)
-      3. is not a valid integer (decimal point should not be displayed)
-      - 5 is not a valid integer (there should be no blank between the minus sign and the first digit.
-      --5 is not a valid integer (only one minus sign allowed)
-      +5 is not a valid integer (plus sign is not allowed)
+	123113, -5, 0, -314159 are valid integer representations.
+	3.14159 is not a valid integer (it is a real number)
+	3.0 is not a valid integer (decimal point should not be displayed)
+	3. is not a valid integer (decimal point should not be displayed)
+	- 5 is not a valid integer (there should be no blank between the minus sign and the first digit.
+	--5 is not a valid integer (only one minus sign allowed)
+	+5 is not a valid integer (plus sign is not allowed)
 
 ### Variables
 All variables should be declared as an integer. Variables must be declared before they are
@@ -114,7 +114,7 @@ Variable names are case sensitive and have a maximum length of 20 characters. Va
 with a letter (alphabetical character) and continue with alphanumeric characters or an underscore
 character.
 
-       int myVar.
+	int myVar.
 
 All variables are initialized with the value 0 at the time of creation.
 
