@@ -6,10 +6,8 @@
 char keyword_list[10][10] = {"int", "move", "add", "to", "sub", "from", "loop", "times", "out", "newline"};
 char recognized_char_list[9][1] = {'.', ',', '-', '_', '[', ']', '{', '}', '"'};
 
-
 int isKeyword(char s[]);
 int isCharRecognized(char ch);
-
 
 int main(int argc, char* argv[])
 {	
